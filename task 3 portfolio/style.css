@@ -1,0 +1,437 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #eee;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 30px;
+
+}
+
+.header .logo {
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    margin-left: 50px;
+}
+
+.logo i {
+    color: rgb(125, 28, 216);
+}
+
+.header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 21px;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header nav a:hover {
+    color: rgb(125, 28, 216);
+    text-decoration: underline;
+}
+
+.header .icons div {
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center
+}
+
+.header .icons div:hover {
+    background-color: rgb(125, 28, 216);
+    color: #fff;
+}
+
+/* main section -- */
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    gap: 50px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.ids {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.icon {
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.7s linear;
+    cursor: pointer;
+    color: black
+}
+
+.icon:hover {
+    background-color: rgb(125, 28, 216);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2:hover {
+    color: rgb(125, 28, 216);
+    transition: 0.4s linear;
+}
+
+#gary {
+    color: gray;
+}
+
+.contact p {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: rgb(125, 28, 216);
+    width: 150px;
+    padding: 4px 6px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 8px 0px;
+    border: 2px solid transparent;
+    transition: 0.7s linear;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: rgb(125, 28, 216);
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+#img-box {
+    margin: 10px;
+}
+
+#img-box img {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.4s linear;
+}
+
+#img-box img:hover {
+    background-color: rgb(125, 28, 216);
+    border-radius: 50% 50% 5% 5%;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+}
+
+.title h3 {
+    transition: 0.4s linear;
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+.title h3:hover {
+    color: rgb(125, 28, 216);
+    text-decoration: underline;
+}
+
+.about {
+    padding: auto;
+    background-color: #fff;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 600px;
+}
+
+.frist {
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+}
+
+.second {
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+}
+
+.second p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.task {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tasked {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0px 10px 20px;
+}
+
+.c-bar {
+    width: 100%;
+    margin: 15px 0px;
+
+}
+
+.skill {
+    text-align: right;
+    padding: 10px 0px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: green;
+}
+
+.Bt {
+    width: 75%;
+    background-color: blue;
+}
+
+.css {
+    width: 80%;
+    background-color: hotpink;
+}
+
+.jq {
+    width: 70%;
+    background-color: navy;
+}
+
+.python {
+    width: 70%;
+    background-color: gray;
+}
+
+.js {
+    width: 65%;
+    background-color: orange;
+}
+
+.node {
+    width: 65%;
+    background-color: rgb(255, 225, 0);
+}
+
+.react {
+    width: 63%;
+    background-color: rgb(255, 106, 0);
+}
+
+.express {
+    width: 50%;
+    background-color: #ff0000;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(125, 28, 216);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(71, 13, 124);
+}
+
+.contact-box {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* main section end */
+
+/* footer content start */
+footer {
+    background-color: Black;
+    height: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 19px;
+}
+
+footer p i {
+    color: rgb(125, 28, 216);
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: block
+    }
+
+    .header .navbar {
+        display: none;
+        position: absolute;
+        top: 110%;
+        right: 2rem;
+        width: 25rem;
+        height: 40rem;
+        border-radius: 10px;
+        background: #fff;
+        border: 2px solid black;
+    }
+
+    .header .navbar.active {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        height: 700px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .ids {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0 20px;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem;
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 15px
+    }
+}
+
+@media (max-width:900px) {
+
+    .about {
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 1100px;
+    }
+
+    .frist {
+        width: 100%;
+        height: 270px;
+        padding: 20px;
+        margin-top: -200px;
+    }
+
+    .second {
+        width: 100%;
+        height: 270px;
+        padding: 10px;
+        margin-top: -100px;
+    }
+
+    .second p {
+        padding: auto;
+    }
+
+
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 68%
+    }
+
+    .fc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:991px) {
+    .task {
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+}
